@@ -1,8 +1,9 @@
 ---
- - name: Install net tools
+  - name: Zainstaluj unzip
     package:
-      name: "{{ item }}"
+      name: unzip
       state: present
-    loop:
-      - net-tools
-      - unzip
+  - name: zainstaluj net-tools
+    package:
+      name: net-tools
+      state: present
